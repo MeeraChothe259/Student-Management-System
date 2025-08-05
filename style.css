@@ -1,0 +1,161 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fa;
+  color: #333;
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input[type="submit"],
+button {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #27ae60;
+}
+
+a button {
+  background-color: #3498db;
+}
+
+a button:hover {
+  background-color: #2980b9;
+}
+
+/* Navbar */
+.nav {
+  background-color: #34495e;
+  padding: 15px;
+  text-align: center;
+}
+
+.nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #1abc9c;
+}
+
+/* Card view for students */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+a{
+    text-decoration:none;
+}
+/* Style for dropdown select */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  appearance: none; /* removes native arrow for custom styling */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+/* Optional: hover/focus style */
+select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
